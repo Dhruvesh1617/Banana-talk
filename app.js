@@ -1,18 +1,29 @@
 var btntranslate=document.querySelector("#Click");
 var txtinput=document.querySelector("#txt-input");
 var txtoutput=document.querySelector("#txt-output");
+var url="https://api.funtranslations.com/translate/minion.json"
+
+function translateUrl(text)
+{
+    return url +"?"+"text="+text;
+}
 
 function translate()
 {
+    var inputtext=txtinput.value
+    fetch(translateUrl(inputtext))
+    .then(response=>response.json())
+    .then(json=>{
+    var TranslatedText=json.contents.translated;
+    txtoutput.innerText=TranslatedText;
 
-    txtoutput.innerText="asjjfkkfoskfkflsdsmv  " +txtinput.value;
+    })
+}
+function ErrorHandler(error)
+{
+    console.log("error occured",error)
+    alert("Something went wrong")
 }
 btntranslate.addEventListener("click",translate);
 
 
-/** ways in which we can define query selector
- * for html tag= eg(textarea=document.querySelector("textarea");)
- *for html id= eg(textarea=document.querySelector("#txt-input");)
- for html class= eg(textarea=document.querySelector(".textarea");)
-eg(textarea=document.querySelector(input[name="textarea"]);)
- */
