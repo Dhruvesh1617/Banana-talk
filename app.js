@@ -1,7 +1,7 @@
 var btntranslate=document.querySelector("#Click");
 var txtinput=document.querySelector("#txt-input");
 var txtoutput=document.querySelector("#txt-output");
-var url="https://api.funtranslations.com/translate/minion.json"
+var url="https://api.funtranslations.com/translate/minion.json";
 
 function translateUrl(text)
 {

@@ -1,0 +1,75 @@
+:root
+{
+    --primary-color:gold;
+
+}
+
+
+
+#txt-input
+        {
+            height: 10vh;
+            width:80%;
+            display: block;
+            padding:1rem;
+            margin:1rem;
+
+        }
+        #opdiv
+        {
+            border: solid 1px;
+            font-size: larger;
+        }
+        #txt-output{
+            height: 10vh;
+            width:80%;
+            display: block;
+            padding: 1rem;
+            margin: 1rem;
+            border: solid 1px black;
+
+        }
+
+    #Click
+    {
+       background-color: var(--primary-color); 
+       padding: 1rem 2rem;
+       border: none;
+       font-family: 'kalam',cursive;
+       font-weight: 200;
+       font-style:oblique;
+    }
+        header{
+        background-color:rgb(255, 215, 0);
+        margin:auto;
+        text-align: center;
+        width: 100%;
+        height: 40%;
+        padding:1rem;
+        padding-top: 2rem 1rem;
+        display: block;
+        
+        }
+
+        body
+        {
+            margin: 0px;
+            font-family:'kalam',cursive;
+        }
+
+        main{
+            margin: auto;
+            padding: 1rem;
+            max-width: 600px;
+        }
+
+        footer
+        {
+            background-color: var(--primary-color);
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            padding: 1rem;
+            border-top-right-radius: 2px;
+        }
