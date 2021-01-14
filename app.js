@@ -18,6 +18,7 @@ function translate()
     txtoutput.innerText=TranslatedText;
 
     })
+    .catch(ErrorHandler)
 }
 function ErrorHandler(error)
 {
