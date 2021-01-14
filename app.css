@@ -63,13 +63,18 @@
             max-width: 600px;
         }
 
-        footer
+        .about
         {
             background-color: var(--primary-color);
             position: fixed;
             bottom: 0;
             width: 100%;
-            text-align: center;
             padding: 1rem;
-            border-top-right-radius: 2px;
+            text-align: center;
+            box-sizing: border-box;
+            font-size: 13px;
+
         }
+
+    
+
